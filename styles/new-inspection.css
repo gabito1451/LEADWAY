@@ -1,0 +1,294 @@
+/* Container style */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #eeeeee;
+  display: flex;
+}
+
+/* Body style */
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  background-color: #eeeeee;
+  display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+  flex: 0.5;
+  display: flex;
+  border: 1px solid #dad7d7;
+  width: 100%;
+}
+
+.sidebar-primary {
+  width: 64px;
+  background-color: #222;
+}
+
+.sidebar-primary nav ul li a {
+  color: #ff7a00;
+}
+
+.sidebar-secondary {
+  background-color: #eeeeee;
+  color: black;
+}
+
+.sidebar-secondary nav ul li a {
+  color: #ff7a00;
+}
+
+.sidebar .logo img {
+  width: 100%;
+  margin-top: 50px;
+  height: 3.5rem;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar nav ul li a i {
+  font-size: 16px;
+}
+
+.sidebar nav ul li.active,
+.sidebar nav ul li:hover {
+  background-color: white;
+  width: 25px;
+}
+
+.sidebar-primary nav {
+  margin-top: 90px;
+}
+
+.sidebar-secondary nav ul li {
+  padding: 10px;
+}
+.sidebar-secondary ul li a img {
+  margin-right: 10px;
+}
+
+/* Main content styles */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 20px 20px;
+  width: 100%;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid #dad7d7;
+}
+
+.top-nav-content {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.top-nav-content p {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.icon-notification {
+  width: 24.17px;
+  height: 29px;
+}
+
+.icon-am {
+  font-size: 12px;
+  font-weight: 700;
+  width: 20px;
+  height: 15px;
+  background-color: #222;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome-message h1 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #34475e;
+}
+
+.welcome-message p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #2f2f2f;
+}
+
+.btn-close {
+  padding: 10px 20px;
+  border: none;
+  background-color: #eeeeee;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 35px;
+  height: 38px;
+  margin: 20px 0px 20px 20px;
+}
+
+.btn-close:hover {
+  background-color: #e5a800;
+}
+
+/* Inspection options styles */
+.inspection-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 10px;
+  /* border: 1px solid #dad7d7; */
+}
+
+.inspection-options a {
+  color: #585858;
+}
+
+.inspection-options p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.choose-class {
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pre-inspection-content,
+.post-inspection-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  border: 1px solid #dad7d7;
+  padding: 20px 10px 10px 10px;
+}
+
+.pre-inspection-content:hover,
+.post-inspection-content:hover {
+  border: 2px solid #ff7a00;
+  border-radius: 5px;
+}
+
+.arrow {
+  width: 35px;
+  height: 20px;
+  position: relative;
+  bottom: 100px;
+  left: -18px;
+  background-color: #eeeeee;
+}
+
+
+.select-class {
+  margin: auto;
+  width: 50%;
+  height: 47px;
+  outline: none;
+  border: 1px lightgray solid;
+  border-radius: 5px;
+  background-color: #eeeeee;
+}
+
+/* Button styles */
+.btn-create-request {
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.inspection-form-link.active {
+  border-color: #ff7a00;
+}
+
+.btn-create-request-inner {
+  width: 100%;
+  padding: 13px 0px;
+  padding: 0px 10px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #c3c4c6;
+  color: #eeeeee;
+  border: none;
+}
+
+.btn-create-request.active .btn-create-request-inner {
+  background-color: #ff7a00;
+}
+
+@media screen and (max-width: 999px) {
+  .sidebar {
+    display: none;
+  }
+  .sidebar nav ul li.active,
+  .sidebar nav ul li:hover {
+    background-color: white;
+  }
+  .inspection-options {
+    display: block;
+  }
+  .icon-arrow {
+    width: 35px;
+    height: 20px;
+    position: relative;
+    bottom: 100px;
+    left: 290px;
+    background-color: #eeeeee;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-fixed {
+    overflow-y: hidden;
+    padding-right: 6px;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    width: 100%;
+  }
+  .top-nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .header {
+    width: 100%;
+    display: block;
+  }
+  .header .btn-new-inspection {
+    margin: 0px auto;
+  }
+}

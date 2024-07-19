@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests</title>
+    <link rel="stylesheet" href="styles/requests.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+    <div class="container-fixed">
+    <!-- side bar -->
+       <div class="sidebar">
+        <div class="sidenav1">
+            <nav>
+                <ul>
+                    <li><a href=""><img src="Assets/dashboard_1-removebg-preview.png"></a></li>
+                    <li class="active"><a href="#"><img src="Assets/calender.svg"></a></li>
+                    <li><a href="#"><img src="Assets/radio.svg"></a></li>
+                    <li><a href="#"><img src="Assets/dashboard-2.svg"></a></li>
+                    <li><a href="#"><img src="Assets/pie-svg.svg"></a></li>
+                    <li><a href="#"><img src="Assets/setting-svg.svg"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sidenav2">
+            <div class="logo">
+                <img src="Assets/LAC_Logo_Alt_2-removebg-preview.png" alt="Leadway Assurance">
+
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"></i>TRM</a></li>
+                    <li><a href="overview.html"><img src="Assets/top-lines.svg"> Overview</a></li>
+                    <li><a href="requests.html"><img src="Assets/lines.svg"> Requests</a></li>
+                </ul>
+            </nav>
+        </div>
+     </div>
+     <div class="main-content">
+        <!-- top nav  -->
+        <div class="top-nav">
+            <div class="top-nav-content">
+                <img src="Assets/notification-bell.svg" class="notification">
+                <img src="Assets/Group 38.svg" class="am">
+                <p>Gabriel <img src="Assets/dropdown.png" class="dropdown"></p>
+            </div>
+        </div>
+        <header>
+            <div class="">
+                <h1> <b>Inspection list</b></h1>
+                <p>See inspection across all business lists</p>
+            </div>
+            <a href="./new-inspection.html"><button class="btn-new-inspection">+ Create New Inspection</button></a>
+        </header>
+        
+
+        <!-- inspection table list -->
+        <section class="inspections">
+            <div class="inspection-status">
+                <div class="links">
+                    <button id="request">All Requests</button>
+                    <button id="ongoing">Ongoing</button>
+                    <button id="completed">Completed</button>
+                </div>
+                <div class="input-search">
+                    <img src="./Assets/Ssearch icon.png">
+                    <div class="input-search-container"><input type="search" placeholder="search"></div>
+                    <p><b>marine </b> <img src="Assets/cancel.jpg"></p>
+                    <p>sort by:<b>class </b><img src="./Assets/dropdown.png"></p>
+                </div>
+            </div>
+            
+            <table id="tbody1">
+                <thead>
+                    <tr>
+                        <th>ID <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th>Name <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th class="class">Class <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th class="inspection-method">Inspection method <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th class="officer">Officer <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th>Status <img src="Assets/dropdown.png" class="dropdown"></th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td>10221</td>
+                        <td>GIG Logistics</td>
+                        <td class="class">Marine</td>
+                        <td class="inspection-method">Digital</td>
+                        <td class="officer">Mustapha Onasanya</td>
+                        <td><a href="user-property.html"class="status-ongoing">ongoing</a></td>
+                    </tr>
+                    <tr>
+                        <td>10222</td>
+                        <td>Shoprite Stores</td>
+                        <td class="class">Property</td>
+                        <td class="inspection-method">Manual</td>
+                        <td class="officer">Mustapha Onasanya</td>
+                        <td><span class="status-completed">Completed</span></td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <table id="tbody2">
+                <thead>
+                    <tr>
+                        <th>ID <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th>Name <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th class="class">Class <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th class="inspection-method">Inspection method <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th class="officer">Officer <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th>Status <img src="Assets/dropdown.png" class="dropdown"></th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td>10221</td>
+                        <td>GIG Logistics</td>
+                        <td class="class">Marine</td>
+                        <td class="inspection-method">Digital</td>
+                        <td class="officer">Mustapha Onasanya</td>
+                        <td><span class="status-ongoing">ongoing</span></td>
+                    </tr>
+                    <tr>
+                        <td>10222</td>
+                        <td>Shoprite Stores</td>
+                        <td class="class">Property</td>
+                        <td class="inspection-method">Manual</td>
+                        <td class="officer">Mustapha Onasanya</td>
+                        <td><span class="status-ongoing">ongoing</span></td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <table id="tbody3">
+                <thead>
+                    <tr>
+                        <th>ID <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th>Name <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th class="class">Class <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th class="inspection-method">Inspection method <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th class="officer">Officer <img src="Assets/dropdown.png" class="dropdown"></th>
+                        <th>Status <img src="Assets/dropdown.png" class="dropdown"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10221</td>
+                        <td>GIG Logistics</td>
+                        <td class="class">Marine</td>
+                        <td class="inspection-method">Digital</td>
+                        <td class="officer">Mustapha Onasanya</td>
+                        <td><span class="status-completed">completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>10222</td>
+                        <td>Shoprite Stores</td>
+                        <td class="class">Property</td>
+                        <td class="inspection-method">Manual</td>
+                        <td class="officer">Mustapha Onasanya</td>
+                        <td><span class="status-completed">Completed</span></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </section>
+    </div>
+    </div>
+    
+    </div>
+
+
+<script>
+const request = document.getElementById("request");
+console.log(request)
+const ongoing= document.getElementById("ongoing");
+const completed = document.getElementById("completed");
+const table1 = document.getElementById("tbody1");
+const table2 = document.getElementById("tbody2");
+const table3 = document.getElementById("tbody3");
+
+request.addEventListener("click", () => {
+
+    // Hide tables
+table1.style.display = "table"
+table2.style.display = "none";  
+table3.style.display = "none";
+})
+ongoing.addEventListener("click", () => {
+
+    // Hide tables
+table1.style.display = "none"
+table2.style.display = "table";  
+table3.style.display = "none";
+})
+completed.addEventListener("click", () => {
+
+    // Hide tables
+table1.style.display = "none"
+table2.style.display = "none";  
+table3.style.display = "table";
+})
+
+
+</script>
+
+</body>
+</html>

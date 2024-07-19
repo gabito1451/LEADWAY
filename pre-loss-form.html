@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspection form</title>
+    <link rel="stylesheet" href="styles/inspection-form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+    <div class="container-fixed">
+        
+        <div class="sidebar">
+            <div class="sidenav1">
+                <nav>
+                    <ul>
+                      <li><a href="./user.html"><img src="Assets/dashboard_1-removebg-preview.png"></a></li>
+                      <li class="active"><a href="#"><img src="Assets/calender.svg"></a></li>
+                      <li><a href="#"><img src="Assets/radio.svg"></a></li>
+                      <li><a href="#"><img src="Assets/dashboard-2.svg"></a></li>
+                      <li><a href="#"><img src="Assets/pie-svg.svg"></a></li>
+                      <li><a href="#"><img src="Assets/setting-svg.svg"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidenav2">
+                <div class="logo">
+                    <img src="Assets/LAC_Logo_Alt_2-removebg-preview.png" alt="Leadway Assurance">
+                </div>
+                <nav>
+                    <ul>
+                      <li><a href="#"></i>TRM</a></li>
+                      <li><a href="overview.html"><img src="Assets/top-lines.svg"> Overview</a></li>
+                      <li><a href="./requests.html"><img src="Assets/lines.svg"> Requests</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+         <div class="main-content">
+            <div class="top-nav">
+                <div class="top-nav-content">
+                    <img src="Assets/notification-bell.svg" class="notification">
+                    <img src="Assets/Group 38.svg" class="am">
+                    <p>Gabriel <img src="Assets/dropdown.png" class="dropdown"></p>
+                </div>
+            </div>
+            <div class="header"> 
+                <div class="">
+                    <h1> <b>Create New Inspection</b></h1>
+                    <p>See inspections across all business classes</p>
+
+                </div>
+                <a href="./new-inspection.html"><button class="btn-new-inspection"><img src="Assets/back-arrow key.jpg"> Back to create request</button></a>
+            </div>
+            <form action="">
+                <h2>Pre Loss Link Generation(Optional)</h2>
+                <div class="info">
+                 <div class="name-info">
+                  <div>
+                    <label for="name">
+                        Policy Number(Optional)
+                    </label>
+                    <input type="text" placeholder="Your number">
+                  </div>
+                  <div>
+                    <label for="name">
+                        Claim Number(Optional)
+                    </label>
+                    <input type="text" placeholder="Your number">
+                  </div>
+                 </div>
+                  
+                 <hr>
+
+                 <div class="number-info">
+                  <div>
+                      <div>
+                        <label for="name">
+                          Client First Name
+                        </label>
+                        <input type="text" placeholder="Your First name">
+                      </div>
+                      <div>
+                        <label for="name">
+                          Client Phone Number
+                        </label>
+                         <input type="text" placeholder="+234 Your Phone Number">
+                      </div>
+                  </div>
+                  <div>
+                      <div>
+                        <label for="name">
+                          Client Last Name
+                        </label>
+                        <input type="text" placeholder="Your Last Name">
+                      </div>
+                      <div>
+                        <label for="name">
+                          Client Email
+                        </label>
+                         <input type="text" placeholder="Your Email">
+                      </div>
+                  </div>
+
+                 
+                  
+                </div>
+                <hr>
+
+                <div class="number-info">
+                    <div>
+                        <div>
+                          <label for="name">
+                            Vehicle Make
+                          </label>
+                          <input type="text" placeholder="Your Vehicle make">
+                        </div>
+                        <div>
+                          <label for="name">
+                            Vehicle Model
+                          </label>
+                           <input type="text" placeholder="Your Vehicle Model">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                          <label for="name">
+                            Registration number
+                          </label>
+                          <input type="text" placeholder="Your Registration Number">
+                        </div>
+                        <div>
+                          <label for="name">
+                            Year
+                          </label>
+                           <input type="text" placeholder="Select ">
+                        </div>
+                    </div>
+                    
+                
+                   </div>        
+                   <p class="comment">Comments</p>
+                   <textarea rows="10"></textarea>
+                   <p class="attachment"> Attach document</p>
+                   <button id="generate-inspection-btn"class="generate-inspection-btn"><a href="">Generate</a></button>
+                 </div>
+                    
+                 <div id="overlay" class="overlay">
+                  <div class="popup">
+                       <h1>Send TRM</h1>
+                      <p>Are you sure you want to creat this request?</p>
+                      <button id="confirmButton">submit</button>
+                      <button id="cancelButton">cancel</button>
+                  </div>
+              </div>
+
+                </div>
+               </form>
+            </div>
+           
+           
+    </div>
+ </div>  
+<script>
+ document.addEventListener("DOMContentLoaded", function() {
+  const generateBtn = document.getElementById("generate-inspection-btn");
+  const overlay = document.getElementById("overlay");
+  const confirmButton = document.getElementById("confirmButton");
+  const cancelButton = document.getElementById("cancelButton");
+
+   generateBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+      overlay.style.display = "flex";
+  });
+
+  confirmButton.addEventListener("click", function(e) {
+      // Add your delete logic here
+      e.preventDefault();
+      window.location.href = "./success.html"
+      overlay.style.display = "none";
+  });
+
+  cancelButton.addEventListener("click", function(e) {
+    e.preventDefault();
+      overlay.style.display = "none";
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+.container-fixed {
+  max-width: 1200px;
+  width: 100%;
+  display: none;
+  margin: 0px auto;
+  background-color: #eeeeee;
+  display: flex;
+}
+body {
+  width:100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #eeeeee;
+  display: flex;
+}
+
+/* side nav style */
+
+.sidebar {
+  width: 278px;
+  color: #fff;
+  display: flex;
+  border: 1px solid #dad7d7;
+}
+.sidenav1 {
+  background-color: #222;
+  width: 64px;
+  height: 1216px;
+}
+.sidenav1 nav ul li a {
+  color: #ff7a00;
+}
+/* .sidenav1 nav ul li:first-child a {
+    color: blue;
+  } */
+.sidenav2 {
+  background-color: #eeeeee;
+  color: black;
+}
+.sidenav2 nav ul li a {
+  color: #ff7a00;
+}
+
+.sidebar .logo img {
+  width: 100%;
+  margin-top: 50px;
+  height: 3.5rem;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar nav ul li a i {
+  height: 23px;
+  width: 23px;
+  margin-right: 22px;
+  height: 20px;
+  width: 36px;
+  font-size: 16px;
+}
+
+.sidebar nav ul li.active,
+.sidebar nav ul li:hover {
+  background-color: white;
+  width: auto;
+}
+.sidenav1 nav {
+  margin-top: 90px;
+}
+.sidenav2 nav ul li {
+  padding: 10px;
+}
+.sidenav2 nav ul li a img{
+  margin-right: 10px;
+}
+
+.sidenav2 nav ul li:first-child a {
+  color: #585858;
+}
+.sidenav2 nav ul li:nth-of-type(2) a {
+  color: #585858;
+}
+/* main content style */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 20px 20px;
+  width: 100%;
+}
+
+.top-nav {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  
+}
+.top-nav-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+}
+.top-nav-content p {
+  font-family: Mulish;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12.55px;
+  text-align: left;
+  margin-left: 5px;
+}
+
+
+.top-nav-content .notification {
+  width: 24.17px;
+  height: 29px;
+  color: #585858;
+}
+.top-nav-content .am {
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.06px;
+  text-align: left;
+  width: 20px;
+  height: 15px;
+  background-color: #222;
+  margin-left: 5px;
+  border-radius: 50px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #dad7d7;
+}
+
+header h1 {
+  font-family: Mulish;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27.61px;
+  text-align: left;
+  color: #34475e;
+}
+
+header p {
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.06px;
+  text-align: left;
+  width: 312px;
+  height: 15px;
+  color: #2f2f2f;
+}
+/* inspection button style */
+
+header .btn-new-inspection {
+  padding: 10px 20px;
+  border: none;
+  background-color: #ff7a00;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 195px;
+  height: 38px;
+  margin: 20px 0px 20px 20px;
+}
+
+header .btn-new-inspection:hover {
+  background-color: #e5a800;
+}
+
+
+/* inspection list table */
+
+.inspections {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dad7d7;
+}
+
+.inspections h2 {
+  font-family: Mulish;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.57px;
+  text-align: left;
+  width: 130px;
+  height: 18px;
+}
+
+.inspections table {
+  display: table;
+  width: 100%;
+}
+ #tbody2, #tbody3{
+  width:100%;
+  display:none;
+}
+.inspections table thead, .inspections table tbody {
+  width: 100%;
+}
+.inspections table th {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.06px;
+  text-align: left;
+  line-height: 45px;
+}
+.inspections table td {
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  line-height: 45px;
+}
+
+.status-completed,
+.status-ongoing {
+  width: 80px;
+  height: 20px;
+  text-align: center;
+  padding: 5px 10px;
+  font-family: Inter;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.status-completed {
+  background-color: #ecfdf3;
+  color: #027a48;
+}
+.status-ongoing {
+  text-decoration: none;
+  background-color: #ffdebf;
+  color: #ff7a00;
+}
+
+/* inspection status links style */
+.inspection-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #dad7d7;
+}
+.inspection-status .links button{
+  height:1.5;
+  color:#2F2F2F;
+  outline:none;
+  border:none;
+}
+.inspection-status .links button:nth-of-type(1) {
+  border-radius: 5px;
+}
+.inspection-status .links button:nth-of-type(1):hover, .inspection-status .links button:nth-of-type(2):hover, .inspection-status .links button:nth-of-type(3):hover {
+  background-color:white;
+  border-radius:3px;
+  padding:4px;
+  cursor: pointer;
+  
+}
+
+/* input style */
+.input-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding-right: 3px;
+}
+.input-search-container img {
+  background-color: #fff;
+  width: 12px;
+  height: 15px;
+}
+
+.input-search p {
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.06px;
+  text-align: left;
+  border-radius: 5px;
+  border: #585858;
+}
+input {
+  border: none;
+}
+.input-search p img {
+  color: #7a7c87;
+  width: 7.59px;
+  height: 7.59px;
+}
+.links {
+  width: Hug (263px) px;
+  height: Hug (33px) px;
+  left: 2.5px;
+  padding: 3px 8px 3px 3px;
+  gap: 0px;
+  border-radius: 7px;
+  opacity: 0px;
+  background-color: #eeeeee;
+}
+.links a {
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.06px;
+  text-align: left;
+}
+
+
+/* style for smaller screen */
+@media screen and (max-width:850px) {
+  header .btn-new-inspection {
+    display:none;
+  }
+  .sidebar{
+    display:none
+  }
+  .sidenav2{
+    display:none;
+  }
+  .input-search{
+    display:none;
+  }
+  .class, .inspection-method, .officer{
+    display:none;
+  }
+  .inspections table {
+    width: 100%;
+  }
+  
+}

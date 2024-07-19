@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/overview.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+    <div class="container-fixed">
+
+        
+    <div class="sidebar">
+        <div class="sidenav1">
+              
+            <nav>
+                <ul>
+                    <li><a href=""><img src="Assets/dashboard_1-removebg-preview.png"></a></li>
+                    <li class="active"><a href="#"><img src="Assets/calender.svg"></a></li>
+                    <li><a href="#"><img src="Assets/radio.svg"></a></li>
+                    <li><a href="#"><img src="Assets/dashboard-2.svg"></a></li>
+                    <li><a href="#"><img src="Assets/pie-svg.svg"></a></li>
+                    <li><a href="#"><img src="Assets/setting-svg.svg"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sidenav2">
+            <div class="logo">
+                <img src="Assets/LAC_Logo_Alt_2-removebg-preview.png" alt="Leadway Assurance">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"></i>TRM</a></li>
+                    <li><a href="overview.html"><img src="Assets/top-lines.svg"> Overview</a></li>
+                    <li><a href="requests.html"><img src="Assets/lines.svg"> Requests</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+     <div class="main-content">
+         
+        <div class="top-nav">
+            <div class="top-nav-content">
+                <img src="Assets/notification-bell.svg" class="notification">
+                <img src="Assets/Group 38.svg" class="am">
+                <p>Gabriel <img src="Assets/dropdown.png" class="dropdown"></p>
+            </div>
+        </div>
+        <header>
+            <div class="">
+                <h1>Welcome, <b>Gabriel</b></h1>
+                <p>Take a look at your dashboard and see all pending tasks</p>
+            </div>
+            <a href="./new-inspection.html"><button class="btn-new-inspection">+ Create New Inspection</button></a>
+        </header>
+        <div class="stats"> 
+            <section class="stats">
+                <div class="row1">
+                    <div class="stat-box blue">
+                        <h2>All Requests</h2>
+                        <span>32</span>
+                        <img src="Assets/hand-svg.svg">
+                    </div>
+                    <div class="stat-box green">
+                        <h2>Completed Requests</h2>
+                        <span>14</span>
+                        <img src="Assets/hand-svg.svg">
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="stat-box yellow">
+                        <h2>Ongoing Requests</h2>
+                        <span>19</span>
+                        <img src="Assets/hand-svg.svg">
+                    </div>
+                    <div class="stat-box red">
+                        <h2>Delayed Requests</h2>
+                        <span>19</span>
+                        <img src="Assets/hand-svg.svg">
+                    </div>
+
+                </div>
+            </section> 
+            <section class="activity">
+                <div class="activity-header">
+                <h2>Activity</h2>
+                <a>view all ></a>
+                </div>
+                <ul>
+                    <li>You have a property inspection coming up in three days <a href="#">See schedule</a></li>
+                    <li>Mustapha Onasanya sent a new property inspection for Rosewright homes <a href="#">See inspection</a></li>
+                    <li>Your scheduled inspection for GIG Logistics is three days overdue <a href="#">Reschedule now</a></li>
+                </ul>
+            </section>
+        </div>
+        <section class="inspections">
+            <h2>Created Inspections</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th class="name">Name</th>
+                        <th>Class</th>
+                        <th class="inspection-method">Inspection method</th>
+                        <th class="officer">Officer</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10221</td>
+                        <td class="name">GIG Logistics</td>
+                        <td><img src="Assets/blue.svg.svg"> Marine</td>
+                        <td class="inspection-method">Digital</td>
+                        <td class="officer">Mustapha Onasanya</td>
+                        <td><span class="status-ongoing">QUOTE REQUEST</span></td>
+                    </tr>
+                    <tr>
+                        <td>10222</td>
+                        <td class="name">Shoprite Stores</td>
+                        <td><img src="Assets/blue.svg.svg"> Property</td>
+                        <td class="inspection-method">Manual</td>
+                        <td class="officer">Mustapha Onasanya</td>
+                        <td><span class="status-completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>10223</td>
+                        <td class="name">Abiodun Adebiyi</td>
+                        <td><img src="Assets/orange dot.svg"> Motors</td>
+                        <td class="inspection-method">Manual</td>
+                        <td class="officer">Mustapha Onasanya</td>
+                        <td><span class="status-ongoing">Ongoing</span></td>
+                    </tr>
+                    <tr>
+                        <td>10224</td>
+                        <td class="name">Bert's Agro Allied</td>
+                        <td><img src="Assets/orange dot.svg"> Agro</td>
+                        <td class="inspection-method">Manual</td>
+                        <td class="officer">Mustapha Onasanya</td>
+                        <td><span class="status-completed">SENT TO UNDER</span></td>
+                    </tr>
+                    <tr>
+                        <td>10225</td>
+                        <td class="name">Abiodun Adebiyi</td>
+                        <td><img src="Assets/orange dot.svg"> Bond</td>
+                        <td class="inspection-method">Digital</td>
+                        <td class="officer">Mustapha Onasanya</td>
+                        <td><span class="status-ongoing">Ongoing</span></td>
+                    </tr>
+                    <tr>
+                        <td >10226</td>
+                        <td class="name">Julian Berger</td>
+                        <td><img src="Assets/orange dot.svg"> Engineering</td>
+                        <td class="inspection-method">Manual</td>
+                        <td class="officer">Mustapha Onasanya</td>
+                        <td><span class="status-completed">Life expired</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+     
+    </div>
+</div>
+
+</body>
+</html>

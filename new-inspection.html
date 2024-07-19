@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Inspection</title>
+    <link rel="stylesheet" href="styles/new-inspection.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-primary">
+                <nav>
+                    <ul>
+                        <li><a href=""><img src="Assets/dashboard_1-removebg-preview.png"></a></li>
+                        <li class="active"><a href="#"><img src="Assets/calender.svg"></a></li>
+                        <li><a href="#"><img src="Assets/radio.svg"></a></li>
+                        <li><a href="#"><img src="Assets/dashboard-2.svg"></a></li>
+                        <li><a href="#"><img src="Assets/pie-svg.svg"></a></li>
+                        <li><a href="#"><img src="Assets/setting-svg.svg"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar-secondary">
+                <div class="logo">
+                    <img src="Assets/LAC_Logo_Alt_2-removebg-preview.png" alt="Leadway Assurance">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">TRM</a></li>
+                        <li><a href="overview.html"><img src="Assets/top-lines.svg"> Overview</a></li>
+                        <li><a href="requests.html"><img src="Assets/lines.svg"> Requests</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="top-nav">
+                <div class="top-nav-content">
+                    <img src="Assets/notification-bell.svg" class="icon-notification">
+                    <img src="Assets/Group 38.svg" class="icon-am">
+                    <p>Gabriel <img src="Assets/dropdown.png" class="icon-dropdown"></p>
+                </div>
+            </div>
+            <div style="position: relative;" class="header">
+                <div class="welcome-message">
+                    <h1>Welcome, <b>Gabriel</b></h1>
+                    <p>Take a look at your dashboard and see all pending tasks</p>
+                </div>
+                <a style="position: absolute; right: 0px;" href="./overview.html"><img src="Assets/x-button.svg" class="btn-close"></a>
+            </div>
+            <div class="inspection-options">
+                <a href="./pre-loss-form.html" class="inspection-form-link"><div class="pre-inspection-option">
+                    <div class="pre-inspection-content">
+                        <img src="Assets/box.svg.svg">
+                        <p>Pre-loss Inspection</p>
+                        <img style="width: 30px; visibility: hidden;" src="Assets/Arrow 1.svg.svg">
+                    </div>
+                </div></a>
+                <a href="inspection-form.html" class="inspection-form-link">
+                    <div class="post-inspection-option">
+                        <div class="post-inspection-content">
+                            <img src="Assets/box.svg.svg">
+                            <p>Post-loss Inspection</p>
+                            <img style="width: 30px;" src="Assets/Arrow 1.svg.svg" class="arrow">
+                        </div>
+                    </div>
+                </a>
+            </div>
+       
+            <div style="display: flex; width: 100%; flex-direction: column; align-items: center; gap: 10px;">
+                <p class="choose-class">Choose a Class</p>
+                <select class="select-class">
+                    <option value=""><img src="Assets/blue.svg.svg"> Property</option>
+                    <option value=""><img src="Assets/blue.svg.svg"> Motor</option>
+                    <option value=""><img src="Assets/orange dot.svg"> Property</option>
+                    <option value=""><img src="Assets/orange dot.svg"> Marine</option>
+                    <option value=""><img src="Assets/blue.svg.svg"> Agric</option>
+                    <option value=""><img src="Assets/orange dot.svg"> Bond</option>
+                </select>
+                <a href="inspection-form.html" class="btn-create-request"><button class="btn-create-request-inner">+ Create Request</button></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const links = document.querySelectorAll('.inspection-form-link');
+            const buttonLink = document.querySelector('.btn-create-request');
+            let selectedLink = null;
+
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    if (selectedLink) {
+                        selectedLink.classList.remove('active');
+                    }
+                    this.classList.add('active');
+                    selectedLink = this;
+
+                    buttonLink.classList.add('active');
+                    buttonLink.href = this.href;
+                });
+            });
+
+            buttonLink.addEventListener('click', function (e) {
+                if (!selectedLink) {
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
