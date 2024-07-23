@@ -16,11 +16,10 @@ html {
   justify-content: space-between;
   align-items: center;
   max-width: 1100px;
-  width: 100%;
-  max-height: 100%;
+  width: 100%; 
   margin: 0 auto;
-  background-color: #eeeeee;
-  padding: 0px 0px 0px 30px;
+  background-color: #FFFBF6;
+  padding: 0px 0px 0px 60px;
 }
 
 img.leadway-logo {
@@ -28,29 +27,32 @@ img.leadway-logo {
   width: 90px;
   height: 100px;
 }
-.container-fixed h1 {
-  font-family: "Arial", sans-serif;
-  font-size: 42px;
-  font-weight: 700;
-  margin-top: 50px;
-  line-height: 52.71px;
-  text-align: left;
-  color: #585858;
-  width: fit-content;
-  word-wrap: break-word;
+.heading{
+font-family: Mulish;
+font-size: 42px;
+font-weight: 700;
+line-height: 52.71px;
+text-align: left;
+
+margin-top: 50px;
+opacity: 0px;
+color: #585858;
+width: fit-content;
+word-wrap: break-word;
 }
-.container-fixed p {
-  font-family: "Arial", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
-  color: #afb0b1;
-  width: fit-content;
+.welcome-text{
+font-family: Mulish;
+font-size: 18px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+color: #afb0b1;
+/* width: fit-content; */
+
 }
 /* form style */
 form {
-  padding-right: 30px;
+  padding-right: 60px;
 }
 .form-group {
   width: 474px;
@@ -58,68 +60,59 @@ form {
   border-radius: 5px;
   background-color: #ffffff;
   margin-top: 50px;
-}
-.form-group2 {
-  display: flex;
-  justify-content: space-between;
-  width: 474px;
-  height: 100px;
-  border-radius: 5px;
-  background-color: #ffffff;
-  margin-top: 10px;
+  position:relative;
+  padding-top: 15px;
 }
 
-.form-group2 p {
-  width: 40px;
-  font-family: "Arial", sans-serif;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 12.55px;
-  text-align: left;
-  color: #ee5331;
-}
 label {
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20.08px;
-  padding-left: 20px;
-  text-align: left;
   width: 61px;
   height: 20px;
+   font-family: Mulish;
+font-size: 16px;
+font-weight: 400;
+line-height: 20.08px;
+text-align: left;
+padding-left: 20px;
+margin-top: 10px;
+color:#000000;
+
 }
 input {
-  font-family: "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20.08px;
   text-align: left;
-  width: 243px;
   height: 40px;
   outline: none;
   border: none;
   margin-left: 22px;
+  flex:1;
+  font-family: Mulish;
+  color:#AFB0B1;
 }
-.form-control-1 {
+.form-control{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
+  
 }
-.form-control-1 img {
-  padding-right: 10px;
+.form-control img {
+  padding-right: 20px;
+
 }
-.form-control-2 input {
-  margin-top: 20px;
-  width: 100%;
-}
-.form-control-3 img {
-  margin-top: 30px;
-  padding-left: 20px;
-  padding-right: 10px;
-}
-.form-control-3 p {
-  padding-left: 17px;
+.show-text{
+  color:#EE5331;
+  position: absolute;
+  right:5px;
+  top:17px;
+  font-family: Mulish;
+font-size: 10px;
+font-weight: 700;
+line-height: 12.55px;
+text-align: left;
+width: 34px;
+
 }
 .reset-password {
   width: 100%;
@@ -127,7 +120,8 @@ input {
   justify-content: space-between;
   margin-top: 20px;
   font-family: "Arial", sans-serif;
-  padding: 0 15px;
+  padding-left:10px;
+  padding-right: 5px;
   font-size: 12px;
   font-weight: 400;
   line-height: 15.06px;
@@ -136,26 +130,30 @@ input {
 .reset-password a {
   text-decoration: none;
   color: #7f8b94;
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
   font-weight: 400;
   line-height: 15.06px;
   white-space: nowrap; /* Prevents text wrapping */
+  font-family: Mulish;
+font-size: 12px;
+text-align: left;
+
 }
-a.button {
-  width: 100%;
-  text-decoration: none;
-  color: #ffffff;
-}
+
 button {
   width: 100%;
-  height: 71px;
-  margin-top: 50px;
-  color: #ffffff;
-  background-color: #ff7a00;
+  padding:10px 0px;
+  margin-bottom: 10px;
   border-radius: 5px;
-  margin-bottom: 60px;
-  border: 2px solid #ff7a00;
+  background-color: #ff7a00;
+  border: none;
+  font-family: Mulish;
+font-size: 24px;
+font-weight: 700;
+line-height: 30.12px;
+text-align: center;
+margin-top: 50px;
+color:#FFFFFF;
+
 }
 
 /* customer management style  */
@@ -170,56 +168,75 @@ button {
   background-repeat: no-repeat;
 }
 
-.info-section {
+/* .info-section {
   width: 100%;
-  margin: 0px 20px;
-}
+  margin: 0px 30px 0px 20px ;
+} */
 
 .info-box {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  padding: 10px;
-  height: 113px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  border-radius: 5px;
-  margin-top: 450px;
-  margin-left: 30px;
-  margin-right: 30px;
+margin: 450px 30px 50px 30px;
+width: 462px;
+height: 115px;
+border-radius: 10px 10px 10px 10px;
+
+
+height: fit-content;
+
+
+
 }
 
 .info-box h2 {
-  font-family: "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 22.59px;
   text-align: left;
   color: #585858;
   width: 100%;
-  padding-left: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-family: Mulish;
+
+
+ 
 }
 .info-box p {
-  max-width: 350px;
   color: #585858;
-  font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 17.57px;
   text-align: left;
-  padding-left: 10px;
+  width: 335px;
+  height: 36px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: Mulish;
+font-size: 14px;
+font-weight: 400;
+line-height: 17.57px;
+text-align: left;
+
+  
 }
 
 .side-box {
-  width: 130px;
-  height: 113px;
-  background-color: #fff;
+  width: 131px;
+  height: 115px;
+  border-radius: 10px 0px 0px 10px;
+  opacity: 0px;
+  background-color: #f3f5f6;
+ 
 }
 .side-box img {
-  width: 130px;
-  height: 113px;
-  padding: 30px 30px;
+  width: 72px;
+height: 72.21px;
+margin-left:27px;
+margin-top:20px;
+
 }
 
 /* smaller screen size style */
@@ -235,7 +252,6 @@ button {
   }
 
   .form-group,
-  .form-group2,
   button#button {
     width: 100%;
   }
@@ -247,7 +263,6 @@ button {
   .reset-password a {
     white-space: nowrap; /* Prevents text wrapping */
   }
-
   .info {
     display: none;
   }
