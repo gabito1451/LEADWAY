@@ -19,11 +19,11 @@ html {
   width: 100%; 
   margin: 0 auto;
   background-color: #FFFBF6;
-  padding: 0px 0px 0px 60px;
+  padding: 0px 0px 0px 30px;
 }
 
 img.leadway-logo {
-  margin-top: 10px;
+  margin-top: 3rem;
   width: 90px;
   height: 100px;
 }
@@ -52,7 +52,7 @@ color: #afb0b1;
 }
 /* form style */
 form {
-  padding-right: 60px;
+  padding-right: 30px;
 }
 .form-group {
   width: 474px;

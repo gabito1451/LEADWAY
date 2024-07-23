@@ -2,7 +2,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0px auto;
-  background-color: #eeeeee;
+  background-color: #fff;
   display: flex;
   font-family: "Mulish", Arial, Helvetica, sans-serif;
 }
@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  background-color: #eeeeee;
+  background-color: #eee;
   display: flex;
 }
 
@@ -35,7 +35,7 @@ body {
   color: blue;
 } */
 .sidenav2 {
-  background-color: #F3F5F6;;
+  background-color: #Fff;;
   color: black;
 }
 .sidenav2 nav ul li a {
@@ -107,7 +107,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  background-color: #EEEEEE;
+  background-color: #fff;
   border: 1px solid #dad7d7;
 }
 .top-nav .hamburger-menu {
@@ -443,9 +443,11 @@ opacity: 0px;
     align-items: center;
     justify-content: center;
   }
+  
   .class,
   .inspection-method,
-  .officer {
+  .officer,
+  .name {
     display: none;
   }
   .inspections table {
@@ -470,9 +472,5 @@ opacity: 0px;
   .inspections table {
     width: 100%;
   }
-  .class,
-  .inspection-method,
-  .name {
-    display: none;
-  }
+  
 }
