@@ -167,7 +167,7 @@ header p {
   font-weight: 400;
   line-height: 15.06px;
   text-align: left;
-  width: 312px;
+  
   height: 15px;
   color: #2f2f2f;
 }
@@ -268,9 +268,15 @@ header .btn-new-inspection:hover {
 }
 
 /* STATUS BOX STYLE */
-.stats {
+.stat {
   display: flex;
   margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  margin-bottom: 10px;
+  
 }
 
 .stat-box h2 {
@@ -298,6 +304,11 @@ header .btn-new-inspection:hover {
 .stat-box.red {
   background-color: #dc3545;
 }
+.row1,.row2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .stat-box.blue,
 .stat-box.green,
 .stat-box.red,
@@ -307,7 +318,7 @@ header .btn-new-inspection:hover {
   border-radius: 8px;
   color: #fff;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
   width: 150;
   height: 70px;
   border-radius: 5px;
@@ -382,27 +393,46 @@ opacity: 0px;
 }
 
 /* inspection table style */
-.inspections table {
+
+.inspections .table-container {
   width: 100%;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  word-break: keep-all;
+  white-space: nowrap;
+  border-collapse: collapse;
   border: 1px solid #dad7d7;
+  padding-left: 20px;
+  word-wrap: keep-all;
+  box-sizing: border-box;
 }
 
 .inspections table th {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 12px;
   font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   line-height: 14.06px;
   text-align: left;
   line-height: 45px;
+  width: fit-content;
 }
+
 .inspections table td {
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
   line-height: 45px;
+  width: fit-content;
 }
+
 
 /* @media screen and (max-width:700px) {
   
@@ -424,11 +454,46 @@ opacity: 0px;
 } */
 
 
+@media screen and (max-width: 650px) {
+  .stats {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+    
+  }
+  .class,
+  .officer,
+  .name {
+    display: none;
+  }
+  
+  header p{
+    padding-bottom: 5px;;
+  }
+}
 @media screen and (max-width: 950px) {
-  .container-fixed {
-    overflow: hidden;
-    padding-right: 6px;
+   .container-fixed {
+    /* overflow: hidden; */
     width: 100vw;
+  } 
+  .activity{
+    width:100%;
+  }
+  .status-completed {
+    background-color: #ecfdf3;
+    color: #027a48;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: 9px;
+  }
+  .status-ongoing {
+    background-color: #ffdebf;
+    color: #ff7a00;
+    padding: 1px;
+    font-size: 7px;
+    border-radius: 5px;
   }
 
   .sidebar {
@@ -438,21 +503,25 @@ opacity: 0px;
     display: none;
   }
   .stats {
-    flex-direction: column;
+    /* flex-direction: column; */
     width: 100%;
     align-items: center;
     justify-content: center;
+    gap:5px;
+    margin-top: 5px;
+  }
+
+  .stat {
+    flex-direction: column;
+    width: 100%;
+    
+    align-items: flex-start;
+    justify-content: center;
+
   }
   
-  .class,
-  .inspection-method,
-  .officer,
-  .name {
-    display: none;
-  }
-  .inspections table {
-    width: 100%;
-  }
+  
+  
   .top-nav {
     display: flex;
     width: 100%;
@@ -465,12 +534,4 @@ opacity: 0px;
   header .btn-new-inspection {
     margin: 0px auto;
   }
-  .inspections table {
-    overflow-y: auto;
-    width: auto;
-  }
-  .inspections table {
-    width: 100%;
-  }
-  
 }
