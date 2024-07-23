@@ -4,6 +4,7 @@
   margin: 0px auto;
   background-color: #eeeeee;
   display: flex;
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
 }
 body {
   width: 100%;
@@ -34,7 +35,7 @@ body {
   color: blue;
 } */
 .sidenav2 {
-  background-color: #eeeeee;
+  background-color: #F3F5F6;;
   color: black;
 }
 .sidenav2 nav ul li a {
@@ -106,6 +107,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  background-color: #EEEEEE;
   border: 1px solid #dad7d7;
 }
 .top-nav .hamburger-menu {
@@ -346,6 +348,9 @@ header .btn-new-inspection:hover {
   width: 39.83px;
   height: 38.75px;
   float: left;
+  width: 39.83px;
+opacity: 0px;
+
 }
 
 /* inspection list table  */
