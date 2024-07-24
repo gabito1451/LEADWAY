@@ -91,9 +91,10 @@ body {
 .sidenav2 nav ul li:first-child a {
   color: #585858;
 }
-.sidenav2 nav ul li:nth-of-type(2) a {
-  color: #585858;
+.sidenav2 nav ul li:nth-of-type(3) a {
+  color:#585858;
 }
+
 
 /* main content style */
 .main-content {

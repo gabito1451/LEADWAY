@@ -179,7 +179,7 @@ body {
   /* border:1px solid hsl(0, 4%, 85%); */
   border-radius: 5px;
   display: flex;
-  gap: 10px;
+  gap: 50px;
   padding: 5px 0px;
   justify-content: center;
 }
@@ -241,6 +241,7 @@ p {
 .policy-progress img {
   width: 101px;
   height: 102px;
+  border :2px solid red;
 }
 .policy-progress h6 {
   font-family: Mulish;

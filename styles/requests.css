@@ -95,6 +95,8 @@ body {
 .sidenav2 nav ul li:nth-of-type(2) a {
   color: #585858;
 }
+
+
 /* main content style */
 .main-content {
   display: flex;
@@ -107,6 +109,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  border: 1px solid #dad7d7;
   
 }
 .top-nav-content {
@@ -147,7 +150,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #dad7d7;
+  
 }
 
 header h1 {
@@ -185,6 +188,9 @@ header .btn-new-inspection {
 
 header .btn-new-inspection:hover {
   background-color: #e5a800;
+}
+.input-search .input-search-container{
+  background:#dad7d7;
 }
 
 
@@ -336,7 +342,7 @@ input {
 
 
 /* style for smaller screen */
-@media screen and (max-width:850px) {
+@media screen and (max-width:859px) {
   header .btn-new-inspection {
     display:none;
   }
