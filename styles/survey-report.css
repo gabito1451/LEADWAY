@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  background-color: #eeeeee;
+  background-color: #eef;
   /* display: flex; */
 }
 
@@ -179,7 +179,7 @@ body {
   /* border:1px solid hsl(0, 4%, 85%); */
   border-radius: 5px;
   display: flex;
-  gap: 50px;
+  gap: 20px;
   padding: 5px 0px;
   justify-content: center;
 }
@@ -241,7 +241,6 @@ p {
 .policy-progress img {
   width: 101px;
   height: 102px;
-  border :2px solid red;
 }
 .policy-progress h6 {
   font-family: Mulish;
@@ -480,7 +479,7 @@ color: #A7A7A7;
   width: 50%;
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:821px){
   .sidebar {
     display: none;
   }
@@ -493,6 +492,7 @@ color: #A7A7A7;
 
   .main {
     display: block;
+    justify-content: center;
   }
   .info {
     margin-top: 400px;
