@@ -1,5 +1,5 @@
 .container-fixed {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0px auto;
   width: 100%;
   background-color: #eeeeee;
@@ -23,6 +23,7 @@ body {
   color: #fff;
   display: flex;
   border: 1px solid #dad7d7;
+  padding-right: 10px;
 }
 .sidenav1 {
   background-color: #222;
