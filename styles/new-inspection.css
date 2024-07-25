@@ -3,7 +3,7 @@
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
   display: flex;
   font-family: "Mulish", Arial, Helvetica, sans-serif;
 
@@ -16,7 +16,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   display: flex;
 }
 

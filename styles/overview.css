@@ -437,25 +437,6 @@ table {
 }
 
 
-/* @media screen and (max-width:700px) {
-  
-  .sidebar{
-    display: none;
-  }
-  .input-search{
-    display:none;
-  }
-  .stats{
-    display: block;
-  }
-  .class, .inspection-method, .officer{
-    display:none;
-  }
-  .inspections table {
-    width: 100%;
-  }
-} */
-
 
 @media screen and (max-width: 650px) {
   .stats {
@@ -463,8 +444,6 @@ table {
     width: 100%;
     align-items: center;
     justify-content: center;
-   
-    
   }
   .class,
   .officer,
@@ -481,6 +460,7 @@ table {
     /* overflow: hidden; */
     width: 100vw;
   } 
+  
   .activity{
     width:100%;
   }
@@ -535,6 +515,6 @@ table {
     display: block;
   }
   header .btn-new-inspection {
-    margin: 0px auto;
+    margin-left: 25px;
   }
 }
