@@ -13,45 +13,31 @@
   <body>
     <div class="container-fixed">
       <!-- form section -->
-      <form>
-        <img
-          src="./Assets/leadway_logo-removebg-preview.png"
-          alt="leadway logo"
-          class="leadway-logo"
-        />
+      <form id="loginForm" onsubmit="return false;">
+        <img src="./Assets/leadway_logo-removebg-preview.png" alt="leadway logo" class="leadway-logo" />
         <h1 class="heading">Underwriter Dashboard</h1>
         <p class="welcome-text">Welcome to your portal account</p>
-
+    
         <div class="form-group">
           <label for="login">Login</label>
           <div class="form-control">
-            <input type="text" placeholder="Enter your login ID" />
+            <input type="text" id="login" placeholder="Enter your login ID" />
             <img src="./Assets/Page 1.svg" alt="ic" />
           </div>
         </div>
         <div class="form-group">
           <label for="password">Password</label>
           <div class="form-control">
-            <input type="text" placeholder="Enter your Password" />
+            <input type="password" id="password" placeholder="Enter your Password" />
             <img src="Assets/Group 1.svg" alt="ic" />
           </div>
-          <p class="show-text">show</p>
+          <p class="show-text" onclick="togglePasswordVisibility()">show</p>
         </div>
-        <!-- <div class="form-group2">
-          <div class="form-control-2">
-            <label for="password">Password</label>
-            <input type="text" placeholder="Enter your Password" />
-          </div>
-          <div class="form-control-3">
-            <p>show</p>
-            <img src="Assets/Group 1.svg" alt="ic" />
-          </div>
-        </div> -->
         <div class="reset-password">
-          <a href="">Keep me logged in</a>
-          <a href="">Reset password</a>
+          <a href="#">Keep me logged in</a>
+          <a href="#">Reset password</a>
         </div>
-        <button type="button"onclick="redirectToDashboard()">Login</button>
+        <button type="button" id="submitButton" class="disabled-button" onclick="validateForm()" disabled>Login</button>
       </form>
 <!-- customer management section -->
       <div class="info">
@@ -68,9 +54,45 @@
     </div>
     <!--redirect to dashboard  -->
     <script>
-        function redirectToDashboard() {
-        location.href = "./overview.html";
-        }
-    </script>
-  </body>
+    function togglePasswordVisibility() {
+      const passwordInput = document.getElementById('password');
+      const showText = document.querySelector('.show-text');
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        showText.textContent = 'hide';
+      } else {
+        passwordInput.type = 'password';
+        showText.textContent = 'show';
+      }
+    }
+
+    function validateForm() {
+      const loginInput = document.getElementById('login');
+      const passwordInput = document.getElementById('password');
+      if (loginInput.value === 'admin' && passwordInput.value === 'admin') {
+        alert('Login successful!');
+        window.location.href = './overview.html'; // Change this to the URL of the dashboard page
+      } else {
+        alert('Invalid login or password.');
+      }
+    }
+
+    const loginInput = document.getElementById('login');
+    const passwordInput = document.getElementById('password');
+    const submitButton = document.getElementById('submitButton');
+
+    function checkInputs() {
+      if (loginInput.value === 'admin' && passwordInput.value === 'admin') {
+        submitButton.disabled = false;
+        submitButton.classList.remove('disabled-button');
+      } else {
+        submitButton.disabled = true;
+        submitButton.classList.add('disabled-button');
+      }
+    }
+
+    loginInput.addEventListener('input', checkInputs);
+    passwordInput.addEventListener('input', checkInputs);
+  </script>
+</body>
 </html>
