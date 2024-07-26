@@ -1,9 +1,9 @@
- body {
+ body,html {
     width:100%;
     margin: 0;
     padding: 0;
     font-family: "Arial", sans-serif;
-    background-color: #eeeeee;
+    background-color: #ffffff;
     display: flex;
   }
   /* container style */
@@ -11,7 +11,7 @@
   max-width: 1400px;
   width: 100%;
   margin: 0px auto;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   display: flex;
 }
   
@@ -35,7 +35,7 @@
         color: blue;
       } */
   .sidenav2 {
-    background-color: #eeeeee;
+    background-color: #ffffff;
     color: black;
   }
   .sidenav2 nav ul li a {
@@ -101,6 +101,7 @@
     flex-direction: column;
     padding: 0px 20px 20px 20px;
     width: 100%;
+    background-color: #ffffff;
   }
   
   .top-nav {
@@ -258,7 +259,7 @@
     align-items: center;
     padding-right: 30px;
     border:1px solid #dad7d7;
-    background-color: #eeeeee;
+    background-color: #ffffff;
    
   }
   .item-one,
@@ -337,14 +338,16 @@
     .container-fixed {
       width:100%;
       margin: 0px auto;
-      background-color: #eeeeee;
+      background-color: #ffffff;
     }
     .cont{
       display:block;
       width:100%;
       margin-bottom: 10px;
+     
 
     }
+    
     .main-cont1, .main-cont2{
       width:300px;
     }
