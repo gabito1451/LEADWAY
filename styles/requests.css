@@ -3,7 +3,7 @@
   width: 100%;
   display: none;
   margin: 0px auto;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   display: flex;
 }
 body {
@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   display: flex;
 }
 
@@ -36,7 +36,7 @@ body {
     color: blue;
   } */
 .sidenav2 {
-  background-color: #eeeeee;
+  background-color: #ffffff;
   color: black;
 }
 .sidenav2 nav ul li a {
@@ -330,7 +330,7 @@ input {
   gap: 0px;
   border-radius: 7px;
   opacity: 0px;
-  background-color: #eeeeee;
+  background-color: #ffffff;
 }
 .links a {
   font-family: Mulish;

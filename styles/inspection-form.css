@@ -2,7 +2,7 @@
   max-width: 1200px;
   width: 100%;
   margin: 0px auto;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   display: flex;
 }
 body {
@@ -10,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   display: flex;
 }
 
@@ -18,7 +18,7 @@ body {
 
 .sidebar {
   width: 278px;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   border: 1px solid #dad7d7;
   padding-right: 10px;
@@ -35,7 +35,7 @@ body {
       color: blue;
     } */
 .sidenav2 {
-  background-color: #eeeeee;
+  background-color: #ffffff;
   color: black;
 }
 .sidenav2 nav ul li a {
@@ -241,7 +241,7 @@ color:#9f9f9f;
 .header .btn-new-inspection {
   padding: 10px 20px;
   border: none;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   color: #acacac;
   cursor: pointer;
   border-radius: 5px;
@@ -304,7 +304,7 @@ form > h2 {
   height: 30px;
   border: 1px solid #dad7d7;
   border-radius: 5px;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   outline: 1px solid #dad7d7;
   margin-bottom: 25px;
   margin-top: 10px;

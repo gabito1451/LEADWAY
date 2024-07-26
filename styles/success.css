@@ -6,7 +6,7 @@
 body {
   width: 100%;
   font-family: "Mulish", sans-serif;
-  background-color: #eeeeee;
+  background-color: #ffffff;
   display: flex;
 }
 .container-fixed {
@@ -16,7 +16,7 @@ body {
   max-width: 1400px;
   width: 100%;
   margin: 0px auto;
-  background-color: #eeeeee;
+  background-color: #ffffff;
 }
 
 .container-fixed img {
