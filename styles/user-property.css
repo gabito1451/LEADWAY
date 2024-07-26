@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Arial", sans-serif;
-    background-color: #ffffff;
+    background-color: #eeeeee;
     display: flex;
   }
   /* container style */
@@ -11,7 +11,7 @@
   max-width: 1400px;
   width: 100%;
   margin: 0px auto;
-  background-color: #ffffff;
+  background-color: #eeeeee;
   display: flex;
 }
   
@@ -35,7 +35,7 @@
         color: blue;
       } */
   .sidenav2 {
-    background-color: #ffffff;
+    background-color: #eeeeee;
     color: black;
   }
   .sidenav2 nav ul li a {
@@ -149,6 +149,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+   padding-left: 40px;
   }
   
   header h1 {
@@ -174,7 +175,7 @@
   /* user-info style */
   .user-info-status {
     display: flex;
-    gap:10px;
+    gap:180px;
   }
   .user-detail {
     display: flex;
@@ -257,12 +258,12 @@
     align-items: center;
     padding-right: 30px;
     border:1px solid #dad7d7;
-    background-color: #ffffff;
+    background-color: #eeeeee;
    
   }
   .item-one,
   .item-two {
-    width: 689px;
+    width: 100%;
     height: 104px;
     
   }
@@ -321,6 +322,8 @@
       width: 100%;
       gap: 100px;
       flex-direction: column-reverse;
+      padding-left: 40px;
+      
     }
 
     .item-one,
@@ -329,14 +332,12 @@
     height: 104px;
     
   }
-  .top-nav{
-    display:none
-  }
+  
 
     .container-fixed {
       width:100%;
       margin: 0px auto;
-      background-color: #ffffff;
+      background-color: #eeeeee;
     }
     .cont{
       display:block;
@@ -357,5 +358,10 @@
    
     .request-status{
       width:100%;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .top-nav{
+      display:none;
     }
   }
