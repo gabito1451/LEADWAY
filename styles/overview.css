@@ -307,6 +307,7 @@ header .btn-new-inspection:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width:100%;
 }
 .stat-box.blue,
 .stat-box.green,
@@ -318,7 +319,7 @@ header .btn-new-inspection:hover {
   color: #fff;
   text-align: center;
   margin-top: 10px;
-  width: 150;
+  /* width: 150; */
   height: 70px;
   border-radius: 5px;
   border: 1.45px 0px 0px 0px;

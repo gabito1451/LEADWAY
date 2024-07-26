@@ -3,10 +3,9 @@
   margin: 0px;
   padding: 0px;
 }
-body,
-html {
+body {
   width: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
   background-color: #eeeeee;
   display: flex;
 }
