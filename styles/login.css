@@ -248,3 +248,12 @@ button {
   }
 }
 
+
+@media screen and (max-width: 378px){
+  form{
+    padding-left:30px;
+    padding-right:30px;
+
+  }
+}
+
