@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="shortcut icon" href="Assets/leadwayLG.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -70,12 +71,12 @@
         const loginInput = document.getElementById('login');
         const passwordInput = document.getElementById('password');
         if (loginInput.value === '' || passwordInput.value === '') {
-          alert('Please enter *admin* for both username and password.');
+          alert('Please enter *admin* for both login and password.');
         } else if (loginInput.value === 'admin' && passwordInput.value === 'admin') {
           alert('Login successful!');
           window.location.href = './overview.html'; 
         } else {
-          alert(' Enter admin for both user and password.');
+          alert(' Enter *admin* for both login and password.');
         }
       }
   

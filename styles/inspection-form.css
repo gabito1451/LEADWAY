@@ -4,6 +4,7 @@
   margin: 0px auto;
   background-color: #ffffff;
   display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 body {
   width:100%;
@@ -189,6 +190,7 @@ body {
   background-color: #fff;
   padding: 0px 10px;
   border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   text-align: left;
 }
 

@@ -5,6 +5,8 @@
   margin: 0px auto;
   background-color: #ffffff;
   display: flex;
+  
+  
 }
 body {
   width:100%;
@@ -13,6 +15,7 @@ body {
   font-family: "Arial", sans-serif;
   background-color: #ffffff;
   display: flex;
+ 
 }
 
 /* side nav style */
