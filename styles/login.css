@@ -51,7 +51,7 @@ img.leadway-logo {
 }
 /* form style */
 form {
-  flex: 1;
+  flex: .8;
   padding: 60px;
 }
 .form-group {
@@ -242,7 +242,7 @@ button {
   }
 
   .reset-password a {
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: nowrap; 
   }
   .info {
     display: none;
